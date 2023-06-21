@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif, Arial;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    background:rgba(214, 214, 214, 1);
+  }
+  /* Header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1.5\rem 8%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    background-color: black;
+  }
+  .header .logo{
+    font-size: 20px;
+    font-weight: bolder;
+    /* color: #fff; */
+    padding-right: 10px;
+    margin-right: 10rem;
+    /* background: -webkit-linear-gradient(rgba(242, 196, 206, 1),rgba(245, 143, 124, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color:  rgba(149, 7, 65, 1);
+  }
+  /* .header .logo i{
+    color: #fff;
+    padding: 0.5rem;
+  } */
+  .header .navbar a{
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: #fff;
+  }
+  .header .navbar a:hover{
+    color: rgba(149, 7, 65, 1);
+  }
+  .header .btn{
+    background: transparent;
+    color: tomato;
+    border: 1px solid tomato;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  body {
+    font-family: 'Segoe UI';
+    background-color: #f1f1f1;
+  }
+  
