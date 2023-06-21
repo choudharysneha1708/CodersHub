@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proflie.css">
+</head>
+<body>
+         <!-- nav -->
+
+         <header class="header">
+          <a href="#" class="logo">
+              CodersHub
+          </a>
+          <nav class="navbar">
+              <a href="../home/index.html">Home</a>
+                  <a href="../chatbot/chatbot.html">Help</a>
+                  <a href="../profile/profile.html">Profile</a>
+                  <a href="../event_host/host_event.html">HOST</a>
+                  <!-- <a href="../host/event.html" >Host</a> -->
+                  <a href="#" id="logout" >Logout</a>
+          </nav>
+      </header> 
+
+         <!-- main -->
+    <div id="green-header"></div>
+    <div class="profile-wrapper">
+      <div class="profile-image">
+        <img src="https://raw.githubusercontent.com/MoosaSaadat/user-profile/master/ProfilePicture11.jpg" alt="Julia Smith Picture" id="img">
+        <span class="profile-status">online</span>
+        <div class="temp-overlay one"></div>
+        <div class="temp-overlay two"></div>
+      </div>
+      <div class="profile-username">
+        <span id="name">J</span>
+        <!-- <span id="profile-username-second">S</span> -->
+      </div>
+      <div class="profile-intro">
+        <span class="profile-intro-designation" id="clg">Graphic Designer</span>
+        <div class="profile-intro-description" id="deg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500's, when an unknown printer took a galley of type.</div>
+      </div>
+      <div class="profile-stats">
+        <div class="profile-stat">
+          <span class="profile-stat-title">Participated Hackathons</span>
+          <br>
+          <span class="profile-stat-value" id="partHack">13</span>
+        </div>
+        <div class="profile-stat">
+          <span class="profile-stat-title">Registered Hackathons</span>
+          <br>
+          <span class="profile-stat-value" id="NoOfReg">20</span>
+        </div>
+        <div class="profile-stat">
+        <span class="profile-stat-title">Won Hackathons</span>
+        <br>
+        <span class="profile-stat-value" id="NoOfWon">7</span>
+        </div>
+      </div>
+      <div class="profile-accounts">
+        <a href="#" class="profile-account-link "><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="profile-account-link"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="profile-account-link"><i class="fab fa-behance fa-lg"></i></a>
+        <a href="#" class="profile-account-link"><i class="fab fa-dribbble fa-lg"></i></a>
+      </div>
+    </div>
+    <script src="profile.js"></script>
+    <script>
+      const islogin=false;
+      const ishome=false;
+      const iseventreg=false;
+      const isevedetail=false;
+      const ishost=false;
+      const isprofile=true;
+      const isFeedShow=false;
+        
+  </script>
+  <script type="module" src="../firebase.js"></script>
+</body>
+</html>

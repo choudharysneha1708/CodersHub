@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CodersHub</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+        <!-- <script src="home.js"></script> -->
+
+        <!-- Swiper CSS -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css"> -->
+
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        
+
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">
+                CodersHub
+            </a>
+            <nav class="navbar">
+                <a href="../home/index.html">Home</a>
+                <a href="../chatbot/chatbot.html">Help</a>
+                <a href="../profile/profile.html">Profile</a>
+                <a href="../event_host/host_event.html">HOST</a>
+                <!-- <a href="../host/event.html" >Host</a> -->
+                <a href="#" id="logout" >Logout</a>
+              </nav>
+              <ul class="notification-drop">
+                <li class="item">
+                  <i class="fa fa-bell-o notification-bell" aria-hidden="true"></i> <span class="btn__badge pulse-button " id="cnt"></span>     
+                  <ul id="notification_bell">
+
+                  </ul>
+                </li>
+              </ul>
+        </header> 
+    
+        <div class="jumbotron">
+          <div class="container">  
+            <div class="main">
+              <h1>Welcome to world of hackathons</h1>
+              <a href="../login/login.html" class="btn-main">Get Started</a>
+              
+            </div>
+          </div>
+        </div>
+    
+        <div class="supporting">
+          <div class="container">
+            <div class="col">
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/design.svg">
+              <h2>Register</h2>
+              <p>Participate in great hackathons organised by big organisations</p>
+    <!--           <a href="#" class="btn-default">Learn More</a> -->
+              
+            </div>
+            <div class="col">
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
+              <h2>Develop</h2>
+              <p>Make innovative webistes using various tech-stacks</p>
+    <!--           <a href="#" class="btn-default">Learn More</a> -->
+              
+            </div>
+            <div class="col">
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/deploy.svg">
+              <h2>Upload</h2>
+              <p>Submit your project on the hackathon page</p>
+    <!--           <a href="#" class="btn-default">Learn More</a> -->
+              
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+            <!-- upcoming hackathons -->
+
+    <div class="outside-hackathon">
+        <h1> Upcoming Hackathons </h1> 
+
+
+    <div class="hack">
+        <section>
+          
+          <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content" id="up">
+    
+
+              
+              
+              
+            </div>
+          </div>
+      
+          <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+        </div>
+    </div>
+
+    <div class="outside-hackathon">
+        <h1> Live Hackathons </h1> 
+
+
+    <div class="hack">
+        <section>
+          
+          <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content" id="liv">
+      
+              
+   
+            </div>
+          </div>
+      
+          <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+        </div>
+    </div>
+
+    <div class="outside-hackathon">
+        <h1> Past Hackathons </h1> 
+
+
+    <div class="hack">
+        <section>
+          
+          <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content" id="pst">
+      
+                   
+            </div>
+          </div>
+      
+          <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+        </div>
+    </div>
+
+
+        
+ <div class="contact-container">
+        <div class="row">
+                <h1>USER Feedback</h1>
+        </div>
+        <div class="row">
+                <h4 style="text-align:center">We'd love to hear from you!</h4>
+        </div>
+        <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input id="feed_name" type="text" required />
+                        <label>Name</label> 
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea id="feed_msg" required></textarea>
+                        <label>Message</label>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12">
+                    <div class="btn-lrg submit-btn" id="btn">Send Feedback</div>
+                </div>
+
+
+                <div class="col-xs-12">
+                    <div class="btn-lrg submit-btn" >
+                      <a  href="../feedback_show/display.html" style="color: white;">
+                        View Feedbacks
+                      </a>
+                    </div>
+                </div>
+        </div>
+  </div>
+
+    <!-- footer -->
+    <div class="myfooter">
+
+        <footer class="footer-distributed">
+        
+          <div class="footer-left">
+        
+            <h3>CodersHub<span><img style="height: 20vh;" src="../../assets/Images/logp.png" alt=""></span></h3>
+        
+            <p class="footer-links">
+              <a href="index.html" class="link-1">Home</a>
+        
+              <a href="../event_host/host_event.html">Host</a>
+        
+              <a href="#">Hackathons</a>
+        
+              <a href="#">About</a>
+        
+      
+            </p>
+
+          </div>
+        
+          <div class="footer-center">
+        
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>IIIT Allahabad</span> Prayagraj, Uttar Pradesh</p>
+            </div>
+        
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+1.555.555.5555</p>
+            </div>
+        
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+        
+          </div>
+        
+          <div class="footer-right">
+        
+            <p style="color: white;" class="footer-company-about">
+              <span>About the company</span>
+              We help companies to organise hackathons where users can partcipate and submit their projects.
+            </p>
+        
+        
+          </div>
+        
+        </footer>
+        </div>
+    
+
+        
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+  <!-- javascript for toggle menu-->
+    <script>
+      var navLinks= document.getElementById("navLinks");
+      function showMenu(){
+          navLinks.style.right ="0";
+
+      }
+      function hideMenu(){
+          navLinks.style.right ="-200px";
+      }
+
+  </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+    <script>
+      const islogin=false;
+      const ishome=true;
+      const iseventreg=false;
+      const isevedetail=false;
+      const ishost=false;
+      const isprofile=false;
+      const isFeedShow=false;
+       function viewFed(){
+          window.location.href="../feedback_show/display.html";
+       }
+
+      
+  </script>
+  <script>
+     $(document).ready(function() {
+  $(".notification-drop .item").on('click',function() {
+    $(this).find('ul').toggle();
+  });
+});
+  </script>
+  <script type="module" src="../firebase.js"> </script>
+    </body>
+</html>
