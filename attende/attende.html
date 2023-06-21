@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="attende.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            CodersHub
+        </a>
+        <nav class="navbar">
+            <a href="../home/index.html">Home</a>
+            <a href="../chatbot/chatbot.html">Help</a>
+            <a href="../profile/profile.html">Profile</a>
+            <a href="../event_host/host_event.html">HOST</a>
+            <!-- <a href="../host/event.html" >Host</a> -->
+            <a href="#" id="logout" >Logout</a>
+          </nav>
+          <!-- <ul class="notification-drop">
+            <li class="item">
+              <i class="fa fa-bell-o notification-bell" aria-hidden="true"></i> <span class="btn__badge pulse-button " id="cnt"></span>     
+              <ul id="notification_bell">
+
+              </ul>
+            </li>
+          </ul> -->
+    </header>  
+
+    
+    <div class="myTable">
+        <div class="container">
+            <!-- <h2>Registered Users</h2> -->
+            <!-- <table>
+
+
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <th>Feedback</th>
+                    <tr>            
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <th>Feedback</th>
+                <tr>  
+                    <tr>
+                        <td>Name</td>
+                        <th>Feedback</th>
+                    <tr> 
+                <tbody id="feedList">
+                </tbody>
+            </table> -->
+
+            <!-- <h2>Responsive Table</h2> -->
+                <div class="table-wrapper">
+                    <table class="fl-table">
+                        <thead>
+                        <tr>
+                            <th>Registered Users</th>
+                        </tr>
+                        </thead>
+                        <tbody id="feedList">
+                        
+                        <tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+    <script src="../firebase.js" type="module"></script>
+    <script>
+        const isevedetail=false;
+        const attendeeList=true;
+        const isFeedShow=false;
+        const islogin=false;
+        const ishome=false;
+        const ishost=false;
+        const isprofile=false;
+        const iseventreg=false;
+</script>
+</body>
+</html>
