@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+  }
+ /* Header */
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1.5\rem 8%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: rgba(26, 26, 28, 1);
+  }
+  .header .logo{
+    font-size: 20px;
+    font-weight: bolder;
+    /* color: #fff; */
+    padding-right: 10px;
+    margin-right: 10rem;
+    background: -webkit-linear-gradient(rgba(149, 7, 65, 1), rgba(195, 8, 63, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgba(195, 8, 63, 1);
+  }
+  /* .header .logo i{
+    color: #fff;
+    padding: 0.5rem;
+  } */
+  .header .navbar a{
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: #fff;
+  }
+  .header .navbar a:hover{
+    color: rgba(195, 8, 63, 1);
+  }
+  .header .btn{
+    background: transparent;
+    color: tomato;
+    border: 1px solid tomato;
+    font-size: 12px;
+    padding: 8px;
+  }
+  /* Registration form css starts */
+  @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+  }
+  
+  html,
+  body {
+      margin: 0 auto;
+      min-height: 100%;
+      font-family: 'Yanone Kaffeesatz', Consolas;
+
+  }
+  
+  
+  h1 {
+      text-align: center;
+      margin: 40px auto;
+      padding-top: 70px;
+      padding-bottom: -3px;
+      width: 260px;
+      color: rgba(195, 8, 63, 1);
+      letter-spacing: 1px;
+      word-spacing: 3px;
+      font-size: 26px;
+      font-weight: 400;
+  }
+  
+  .details {
+      margin: 20px auto;
+      font-size: 10px;
+      font-weight: 300;
+      width: 200px;
+      padding: 2px 5px;
+      letter-spacing: 1px;
+      position: relative;
+      right: 30px;
+      bottom: 30px;
+      color: #0b0b0c;
+  }
+  
+  form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .col {
+    /* padding-top: -5px; */
+    padding-top: 2px;
+    padding-left: 70px;
+    padding-right: 70px;
+      width: 250px;
+      min-width: 300px;
+  }
+  
+  form .minput {
+      position: relative;
+      margin: 26px 10px;
+      width: 90%;
+      max-width: 400px;
+      padding-bottom: 10px;
+  }
+  
+  .minput input {
+      font-size: 20px;
+      padding: 1px 4px;
+      display: block;
+      width: 150%;
+      border: none;
+      /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+      letter-spacing: 1px;
+      /* color: #0d0d0e; */
+      /* -webkit-border-radius: 2px 0 0 2px; */
+      -moz-border-radius: 2px 0 0 2px;
+      border-radius: 2px 0 0 2px;
+      border-bottom: 1px solid black;
+  }
+  .xx{
+    border-radius: 12px;
+    background-color: rgba(195, 8, 63, 1);
+  }
+  .textt
+  {
+    margin-top: 3.5px;
+  }
+  .xx {
+    position: absolute;
+    top:50%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:5px; 
+    padding:15px;
+    min-height:50px; 
+    min-width: 150px;
+  }
+  .xx:hover {
+    background-color:rgba(195, 8, 63, 1);
+    transition: 0.7s;
+}
+  
+  .minput input[type="number"] {
+      width: 60px;
+      padding-right: 0;
+  }
+  
+  input[type="number"] ~ .bar {
+      width: 60px;
+  }
+  
+  input[type="number"] ~ label {
+      margin: 0;
+  }
+  
+  .minput input:focus {
+      outline: none;
+  }
+  
+  .minput label {
+      color: #afafaf;
+      font-size: 20px;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 5px;
+      top: -2px;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+  }
+  
+  textarea:focus ~ label,
+  textarea:valid ~ label,
+  input:focus ~ label,
+  input:valid ~ label,
+  .up ~ label {
+      top: -19px;
+      font-size: 18px;
+  }
+  
+  .bar {
+      position: relative;
+      display: block;
+      width: 100%;
+  }
+  
+  .bar:before,
+  .bar:after {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 0;
+      background-color: #afafaf;
+      position: absolute;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+  }
+  
+  .bar:before {
+      left: 50%;
+  }
+  
+  .bar:after {
+      right: 50%;
+  }
+  
+  input:focus ~ .bar:before,
+  input:focus ~ .bar:after {
+      width: 50%;
+  }
+  
+  input[type=submit] {
+      cursor: pointer;
+      background-color: #1ABC9C;
+      color: white;
+      border-radius: 3px;
+      border: none;
+      max-width: 125px;
+  }
+  
+  input:disabled {
+      background: rgba(44, 43, 48, 1);
+      cursor: not-allowed;
+  }
+  
+  
+  /* Button radio/checkbox/select */
+  
+  .control {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #afafaf;
+      margin: 6px 10px;
+  }
+  
+  /* .sex {
+      margin: 26px 10px;
+      font-size: 20px;
+      color: #afafaf;
+      top: -7px;
+  } */
+  
+  .control input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+  }
+  
+  label.control--radio {
+      width: 80px;
+  }
+  
+  .control__indicator {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background: #afafaf;
+  }
+  
+  .control--radio .control__indicator {
+      border-radius: 50%;
+  }
+  
+  .control:hover input ~ .control__indicator,
+  .control input:focus ~ .control__indicator {
+      background: #ccc;
+  }
+  
+  .control input:checked ~ .control__indicator {
+      background: #66CC99;
+  }
+  
+  .control:hover input:not([disabled]):checked ~ .control__indicator,
+  .control input:checked:focus ~ .control__indicator {
+      background: #66CC99;
+  }
+  
+  .control input:disabled ~ .control__indicator {
+      background: #e6e6e6;
+      opacity: 0.6;
+      pointer-events: none;
+  }
+  
+  .control__indicator:after {
+      content: '';
+      position: absolute;
+      display: none;
+  }
+  
+  .control input:checked ~ .control__indicator:after {
+      display: block;
+  }
+  
+  .control--checkbox .control__indicator:after {
+      left: 8px;
+      top: 4px;
+      width: 3px;
+      height: 8px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+  }
+  
+  .control--checkbox input:disabled ~ .control__indicator:after {
+      border-color: #7b7b7b;
+  }
+  
+  .control--radio .control__indicator:after {
+      left: 7px;
+      top: 7px;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background: #fff;
+  }
+  
+  .control--radio input:disabled ~ .control__indicator:after {
+      background: #7b7b7b;
+  }
+  
+  .select {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 0;
+      width: 160px;
+  }
+  
+  .select select {
+      display: inline-block;
+      width: 160px;
+      cursor: pointer;
+      padding: 10px;
+      outline: 0;
+      border: 0;
+      border-bottom: 1px solid #afafaf;
+      border-radius: 5px 5px 0 0;
+      background: #fff;
+      color: #afafaf;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-size: 22px;
+  }
+  
+  .select option {
+      font-family: Consolas, "monospace";
+      font-size: 18px;
+  }
+  
+  .select select::-ms-expand {
+      display: none;
+  }
+  
+  .select select:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+  }
+  
+  .select__arrow {
+      position: absolute;
+      top: 17px;
+      right: 14px;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+      border-style: solid;
+      border-width: 8px 5px 0 5px;
+      border-color: #7b7b7b transparent transparent transparent;
+  }
+  
+  .select select:disabled ~ .select__arrow {
+      border-top-color: #ccc;
+  }
+
+  .col {
+    width: 250px;
+    min-width: 300px;
+}
+.xxx{
+    font-weight: 3px;
+    font-size: 50px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    letter-spacing: -1.5px;
+  }
